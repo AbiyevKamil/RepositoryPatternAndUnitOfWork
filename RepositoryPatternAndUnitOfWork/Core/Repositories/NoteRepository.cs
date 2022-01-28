@@ -6,9 +6,9 @@ namespace RepositoryPatternAndUnitOfWork.Core.Repositories
 {
     public class NoteRepository : GenericRepository<Note>, INoteRepository
     {
-        public NoteRepository(ApplicationDbContext context, ILogger logger) : base(context, logger)
+        public NoteRepository(ApplicationDbContext context, ILogger logger)
+            : base(context, logger)
         {
-
         }
 
         public async Task<Note> GetNoteTitle(int id)
